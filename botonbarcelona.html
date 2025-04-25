@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarFlex</title>
+    <link rel="stylesheet" href="../CSS/cssbotones.css"/>
+</head>
+<header class="header">
+  <div class="bloque">
+      <div class="logo">
+          <img src="../fotos/logo4.png" alt="logocar" width="500" height="75">
+      </div>
+      <nav class="menu">
+        <a href="../HTML/index.html">Inicio</a>
+        <a href="../HTML/botonbarcelona.html">Nuestros Coches</a>
+        <a href="../HTML/about.html">About</a>
+        <a href="../HTML/contactos.html">Contacto</a>
+        <!-- VIDEO -->
+          <button class="button1" onclick="iniciosesion()">Inicio Sesión</button>
+          <button class="button1" onclick="registro()">Registro</button>
+      </nav>
+  </div>
+</header>
+
+<body>
+  <div class="contenedorCards">
+    <!-- VIDEO -->
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd"></div>
+        <div class="imgProd" style="background-image: url(../fotos/seat.webp)" alt="Seat" id="car-image"></div>
+        <div class="infoProd">
+          <button id="change-image-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+          </svg>
+        </button>
+        <!-- VIDEO -->
+          <p class="nombreProd">Seat Ibiza</p>
+          <p class="extraInfo">Tipo de Coche: Gasolina</p>
+          <p class="extraInfo">Motor: 1.0 TSI, 3 cilindros, inyección directa turbo</p>
+          <p class="extraInfo">Velocidad máxima: 195 km/h</p>
+          <p class="extraInfo">Aceleración 0-100 km/h: 10,2 segundo</p>
+          <p class="extraInfo">Consumo WLTP: 5 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioOferta">16.000 €</p>
+              <p class="precio precioProd">13.500 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text">Comprar</div>
+                <!-- VIDEO -->
+                <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd" style="background-color: #3f3a3a;"></div>
+        <div class="imgProd" style="background-image: url(../fotos/audi.webp)" alt="Audi" id="car-image1"></div>
+        <div class="infoProd">
+          <button id="change-image-btn1">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+          </svg>
+        </button>
+          <p class="nombreProd">Audi A1 Sportback</p>
+          <p class="extraInfo">Tipo de Coche: Gasolina</p>
+          <p class="extraInfo">Motor: 1.0 TFSI de tres cilindros 95-110 CV</p>
+          <p class="extraInfo">Velocidad Máxima: 217 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 7.9 segundos</p>
+          <p class="extraInfo">Consumo: 5.7-5.9 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioProd">26.165 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" >Comprar</div>
+                <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd" style="background-color: #3f3a3a;"></div>
+        <div class="imgProd" style="background-image: url(../fotos/mercedes.webp)" alt="Mercedes" id="car-image2"></div>
+        <div class="infoProd">
+          <button id="change-image-btn2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+          </svg>
+        </button>
+          <p class="nombreProd">Mercedes CLA</p>
+          <p class="extraInfo">Tipo de Coche: Gasolina</p>
+          <p class="extraInfo">Motor: 2.0 TFSI de cuatro cilindros 218 CV</p>
+          <p class="extraInfo">Velocidad Máxima: 235 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 6.9 segundos</p>
+          <p class="extraInfo">Consumo: 6.2 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioOferta">40.716 €</p>
+              <p class="precio precioProd">36.999 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd" style="background-color: #3f3a3a;"></div>
+        <div class="imgProd" style="background-image: url(../fotos/bmw.webp)" alt="BMW" id="car-image3"></div>
+        <div class="infoProd">
+          <button id="change-image-btn3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+          </svg>
+        </button>
+          <p class="nombreProd">BMW Serie 1</p>
+          <p class="extraInfo">Tipo de Coche: Gasolina</p>
+          <p class="extraInfo">Motor: 2.0 TFSI de cuatro cilindros 190 CV</p>
+          <p class="extraInfo">Velocidad Máxima: 235 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 7.2 segundos</p>
+          <p class="extraInfo">Consumo: 6.5 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioOferta"> </p>
+              <p class="precio precioProd">31.089 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedorCards">
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd"></div>
+        <div class="imgProd" style="background-image: url(../fotos/jeep.webp);"></div>
+        <div class="infoProd">
+          <p class="nombreProd">Jeep Renegade 4xe</p>
+          <p class="extraInfo">Tipo de Coche: Híbrido</p>
+          <p class="extraInfo">Motor: 1.3 TSI de cuatro cilindros 240 CV</p>
+          <p class="extraInfo">Velocidad Máxima: 199 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 7.1 segundos</p>
+          <p class="extraInfo">Consumo: 2.2 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioOferta">39.289 €</p>
+              <p class="precio precioProd">35.669 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd" style="background-color: #3f3a3a;"></div>
+        <div class="imgProd" style="background-image: url(../fotos/cupra.webp);"></div>
+        <div class="infoProd">
+          <p class="nombreProd">Cupra Formentor</p>
+          <p class="extraInfo">Tipo de Coche: Diesel</p>
+          <p class="extraInfo">Motor: 1.5 TSI de cuatro cilindros 150 CV</p>
+          <p class="extraInfo">Velocidad Máxima: 204 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 8.9 segundos</p>
+          <p class="extraInfo">Consumo: 6.7 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioProd">28.481 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd" style="background-color: #3f3a3a;"></div>
+        <div class="imgProd" style="background-image: url(../fotos/nis.webp);"></div>
+        <div class="infoProd">
+          <p class="nombreProd">Nissan Qashqai</p>
+          <p class="extraInfo">Tipo de Coche: Gasolina e Híbrido</p>
+          <p class="extraInfo">Motor: 1.3 TSI de cuatro cilindros 190 CV</p>
+          <p class="extraInfo">Velocidad Máxima: 190 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 8.5 segundos</p>
+          <p class="extraInfo">Consumo: 4.9 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioOferta"> </p>
+              <p class="precio precioProd">28.332 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd" style="background-color: #3f3a3a;"></div>
+        <div class="imgProd" style="background-image: url(../fotos/peo.webp);"></div>
+        <script src="script.js"></script>
+        <div class="infoProd">
+          <p class="nombreProd">Peugeot</p>
+          <p class="extraInfo">Tipo de Coche: Gasolina</p>
+          <p class="extraInfo">Motor: 1.2 PureTech de tres cilindros 130 CV</p>
+          <p class="extraInfo">Velocidad Máxima: 210 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 9.1 segundos</p>
+          <p class="extraInfo">Consumo: 5.0 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioOferta">22.906 €</p>
+              <p class="precio precioProd">19.641 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedorCards">
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd"></div>
+        <div class="imgProd" style="background-image: url(../fotos/hyu.webp);"></div>
+        <div class="infoProd">
+          <p class="nombreProd">Hyundai i30 Fastback</p>
+          <p class="extraInfo">Tipo de Coche: Híbrido</p>
+          <p class="extraInfo">Motor: Motor: 1.0 TGDI de tres cilindros 120CV</p>
+          <p class="extraInfo">Velocidad Máxima: 196 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 11.4 segundos</p>
+          <p class="extraInfo">Consumo: 5.3 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioOferta"> </p>
+              <p class="precio precioProd">23.400 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd" style="background-color: #3f3a3a;"></div>
+        <div class="imgProd" style="background-image: url(../fotos/ford.webp);"></div>
+        <div class="infoProd">
+          <p class="nombreProd">Ford Ranger</p>
+          <p class="extraInfo">Tipo de Coche: Diesel</p>
+          <p class="extraInfo">Motor: 2.3 EcoBoost de cuatro cilindros 270 CV</p>
+          <p class="extraInfo">Velocidad Máxima: 180 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 7.0 segundos</p>
+          <p class="extraInfo">Consumo: 8.0 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioProd">33.667 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd" style="background-color: #3f3a3a;"></div>
+        <div class="imgProd" style="background-image: url(../fotos/opel.webp);"></div>
+        <div class="infoProd">
+          <p class="nombreProd">Opel Corsa</p>
+          <p class="extraInfo">Tipo de Coche: Gasolina e Híbrido</p>
+          <p class="extraInfo">Motor: 1.2 PureTech de tres cilindros 130 CV</p>
+          <p class="extraInfo">Velocidad Máxima: 210 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 9.1 segundos</p>
+          <p class="extraInfo">Consumo: 5.0 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioOferta">19.060 €</p>
+              <p class="precio precioProd">16.700 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd" style="background-color: #3f3a3a;"></div>
+        <div class="imgProd" style="background-image: url(../fotos/tesla.webp);"></div>
+        <script src="script.js"></script>
+        <div class="infoProd">
+          <p class="nombreProd">Tesla Model 3</p>
+          <p class="extraInfo">Tipo de Coche: Electrico</p>
+          <p class="extraInfo">Motor: Motor eléctrico trasero 283 CV</p>
+          <p class="extraInfo">Velocidad Máxima: 225 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 5.3 segundos</p>
+          <p class="extraInfo">Consumo: 100% eléctrico / 629Km de autonomia</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioOferta">36.470 €</p>
+              <p class="precio precioProd">31.874 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="texopremium"><h2>Premium</h2></div>
+  <div class="contenedorCards">
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd" style="background-color: #AB9144;"></div>
+        <div class="imgProd" style="background-image: url(../fotos/mercedesvip.webp)" alt="Seat" id="car-image"></div>
+        <div class="infoProd">
+          <p class="nombreProd">Mercedes Clase G</p>
+          <p class="extraInfo">Tipo de Coche: Gasolina</p>
+          <p class="extraInfo">Motor: 4.0L V8 biturbo 585 CV</p>
+          <p class="extraInfo">Velocidad Máxima: 210 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 5.9 segundos</p>
+          <p class="extraInfo">Consumo: 14.9 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioOferta">139.173 €</p>
+              <p class="precio precioProd">133.525 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd" style="background-color: #AB9144;"></div>
+        <div class="imgProd" style="background-image: url(../fotos/audivip.webp);"></div>
+        <div class="infoProd">
+          <p class="nombreProd">Audi RS7 Sportback</p>
+          <p class="extraInfo">Tipo de Coche: Gasolina</p>
+          <p class="extraInfo">Motor: 4.0L V8 biturbo 600CV</p>
+          <p class="extraInfo">Velocidad Máxima: 305 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 3.6 segundos</p>
+          <p class="extraInfo">Consumo: 12.3 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioProd">168.500 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd" style="background-color: #AB9144;"></div>
+        <div class="imgProd" style="background-image: url(../fotos/bmwvip.webp);"></div>
+        <div class="infoProd">
+          <p class="nombreProd">BMW M4 Coupé</p>
+          <p class="extraInfo">Tipo de Coche: Gasolina</p>
+          <p class="extraInfo">Motor: 3.0L de seis cilindros, biturbo 431CV</p>
+          <p class="extraInfo">Velocidad Máxima: 280 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 4.2 segundos</p>
+          <p class="extraInfo">Consumo: 9.7 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioOferta">166.887 €</p>
+              <p class="precio precioProd">158.750€</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd" style="background-color: #AB9144;"></div>
+        <div class="imgProd" style="background-image: url(../fotos/Lexus.webp);"></div>
+        <div class="infoProd">
+          <p class="nombreProd">Lexus LS</p>
+          <p class="extraInfo">Tipo de Coche: Híbrido</p>
+          <p class="extraInfo">Motor: 3.5L V6 biturbo híbrido</p>
+          <p class="extraInfo">Velocidad Máxima: 210 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 5.9 segundos</p>
+          <p class="extraInfo">Consumo: 9.5 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioOferta"> </p>
+              <p class="precio precioProd">131.400 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedorCards">
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd" style="background-color: #AB9144;"></div>
+        <div class="imgProd" style="background-image: url(../fotos/mercedesdepor.webp);"></div>
+        <div class="infoProd">
+          <p class="nombreProd">Mercedes AMG SL</p>
+          <p class="extraInfo">Tipo de Coche: Híbrido</p>
+          <p class="extraInfo">Motor: 4.0L V8 biturbo 585 CV</p>
+          <p class="extraInfo">Velocidad Máxima: 315 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 3.6 segundos</p>
+          <p class="extraInfo">Consumo: 12.9 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioOferta">141.917 €</p>
+              <p class="precio precioProd">134.785 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+  </div>
+    </div>
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd" style="background-color: #AB9144;"></div>
+        <div class="imgProd" style="background-image: url(../fotos/audiadva.webp);"></div>
+        <div class="infoProd">
+          <p class="nombreProd">Audi RS6 Avant</p>
+          <p class="extraInfo">Tipo de Coche: Diesel</p>
+          <p class="extraInfo">Motor: 4.0L V8 biturbo 600 CV</p>
+          <p class="extraInfo">Velocidad Máxima: 305 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 3.6 segundos</p>
+          <p class="extraInfo">Consumo: 12.4 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioProd">162.132€</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd" style="background-color: #AB9144;"></div>
+        <div class="imgProd" style="background-image: url(../fotos/bmwcomp.webp);"></div>
+        <div class="infoProd">
+          <p class="nombreProd">BMW M8 Competition Cabrio</p>
+          <p class="extraInfo">Tipo de Coche: Gasolina e Híbrido</p>
+          <p class="extraInfo">Motor: 4.0L V8 biturbo 625 CV</p>
+          <p class="extraInfo">Velocidad Máxima: 325 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 3.3 segundos</p>
+          <p class="extraInfo">Consumo: 11.4 l/100 km</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioOferta"> </p>
+              <p class="precio precioProd">196.304 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper">
+        <div class="colorProd" style="background-color: #AB9144;"></div>
+        <div class="imgProd" style="background-image: url(../fotos/mercedestocho.webp);"></div>
+        <script src="script.js"></script>
+        <div class="infoProd">
+          <p class="nombreProd">Mercedes AMG Performance</p>
+          <p class="extraInfo">Tipo de Coche: Híbrido</p>
+          <p class="extraInfo">Motor: 4.0L V8 biturbo 816 CV</p>
+          <p class="extraInfo">Velocidad Máxima: 295 km/h</p>
+          <p class="extraInfo">Aceleración: 0-100 km/h en 2.9 segundos</p>
+          <p class="extraInfo">Consumo: 4.4 l/100 km + Motor electrico</p>
+          <div class="actions">
+            <div class="preciosGrupo">
+              <p class="precio precioOferta">233.666 €</p>
+              <p class="precio precioProd">221.550 €</p>
+            </div>
+            <div class="button">
+              <div class="button-wrapper">
+                <div class="text" ">Comprar</div>
+                  <span class=icon onclick="compra()">
+                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+              </svg>
+                  </span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+       
+<!-- VIDEO -->
+  <script>
+
+<!-- VIDEO -->
+    document.addEventListener("DOMContentLoaded", function () {
+      const carImageElement = document.getElementById("car-image");
+      const changeImageButton = document.getElementById("change-image-btn");
+
+      
+      const imageList = [
+        "../fotos/seat.webp",
+        "../fotos/seat1.webp",
+        "../fotos/seat2.webp"
+      ];
+
+      
+      let currentIndex = 0;
+
+      
+      function changeImage() {
+        currentIndex = (currentIndex + 1) % imageList.length;
+        carImageElement.style.backgroundImage = `url(${imageList[currentIndex]})`;
+      }
+
+      
+      changeImageButton.addEventListener("click", changeImage);
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const carImageElement = document.getElementById("car-image1");
+      const changeImageButton = document.getElementById("change-image-btn1");
+
+      
+      const imageList = [
+        "../fotos/audi.webp",
+        "../fotos/audi1.webp",
+        "../fotos/audi2.webp"
+      ];
+
+      
+      let currentIndex = 0;
+
+      
+      function changeImage() {
+        currentIndex = (currentIndex + 1) % imageList.length;
+        carImageElement.style.backgroundImage = `url(${imageList[currentIndex]})`;
+      }
+
+      
+      changeImageButton.addEventListener("click", changeImage);
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const carImageElement = document.getElementById("car-image2");
+      const changeImageButton = document.getElementById("change-image-btn2");
+
+      
+      const imageList = [
+        "../fotos/mercedes.webp",
+        "../fotos/mercedes1.webp",
+        "../fotos/mercedes2.webp"
+      ];
+
+      
+      let currentIndex = 0;
+
+      
+      function changeImage() {
+        currentIndex = (currentIndex + 1) % imageList.length;
+        carImageElement.style.backgroundImage = `url(${imageList[currentIndex]})`;
+      }
+
+      
+      changeImageButton.addEventListener("click", changeImage);
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const carImageElement = document.getElementById("car-image3");
+      const changeImageButton = document.getElementById("change-image-btn3");
+
+      
+      const imageList = [
+        "../fotos/bmw.webp",
+        "../fotos/bmw1.webp",
+        "../fotos/bmw2.webp"
+      ];
+
+      
+      let currentIndex = 0;
+
+      
+      function changeImage() {
+        currentIndex = (currentIndex + 1) % imageList.length;
+        carImageElement.style.backgroundImage = `url(${imageList[currentIndex]})`;
+      }
+
+      
+      changeImageButton.addEventListener("click", changeImage);
+    });
+
+    function registro() {
+      location = '../HTML/registro.html'
+    }
+    function iniciosesion() {
+      location = '../HTML/registro.html'
+    }
+    function compra() {
+      location = '../HTML/compra.html'
+    }
+
+  </script>
+</body>
+</html>

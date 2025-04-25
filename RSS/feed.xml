@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>CarFlex</title>
+        <link>https://sergiioponce0.github.io/CarFlex/index.html</link>
+        <description>Esta es mi pagina web CarFlex la cual esta dedicada a la venta de coches.</description>
+        <language>es</language>
+        <item>
+            <title>Inicio</title>
+            <link>https://sergiioponce0.github.io/CarFlex/index.html</link>
+            <description>Este apartado de la pagina nos lleva el HTML principal donde se encuentra el inicio de nuestra pagina</description>
+            <guid isPermaLink='true'>https://sergiioponce0.github.io/CarFlex/index.html</guid>
+        </item>
+        <item>
+            <title>Nuestros Coches</title>
+            <link>https://sergiioponce0.github.io/CarFlex/botonbarcelona.html</link>
+            <description>En esta seccion se encuentran todos los coches disponibles dentro de nuestra pagina web</description>
+            <guid isPermaLink='true'>https://sergiioponce0.github.io/CarFlex/botonbarcelona.html</guid>
+        </item>
+        <item>
+            <title>About</title>
+            <link>https://sergiioponce0.github.io/CarFlex/about.html</link>
+            <description>Este punto de la página esta dedicado a ¿Quines Somos?</description>
+            <guid isPermaLink='true'>https://sergiioponce0.github.io/CarFlex/about.html</guid>
+        </item>
+        <item>
+            <title>Contactos</title>
+            <link>https://sergiioponce0.github.io/CarFlex/contactos.html</link>
+            <description>En este apartado de la pagina se encuentra la informacion de contacto, junto a las redes sociales y otras interacciones</description>
+            <guid isPermaLink='true'>https://sergiioponce0.github.io/CarFlex/contactos.html</guid>
+        </item>
+    </channel>
+</rss>

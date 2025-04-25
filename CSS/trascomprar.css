@@ -1,0 +1,110 @@
+body {
+    background-image: url(../fotos/fondo_definitivo.jpg);
+    background-attachment: fixed;
+  }
+  
+  .modal {
+    width: fit-content;
+    height: fit-content;
+    background: #ffffff;
+    box-shadow:
+      0px 187px 75px rgba(0, 0, 0, 0.01),
+      0px 105px 63px rgba(0, 0, 0, 0.05),
+      0px 47px 47px rgba(0, 0, 0, 0.09),
+      0px 12px 26px rgba(0, 0, 0, 0.1),
+      0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 26px;
+    max-width: 450px;
+    max-height: 400px;
+    margin-top: 3cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 0.75cm;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 100px;
+    margin-left: 100px;
+    
+  }
+  
+  
+  h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 2cm;
+    margin-left: 1cm;
+  }
+  
+  pre {
+    color: rgb(26, 25, 25);
+    align-items: center;
+    margin-top: -2.3cm;
+    margin-left: -3.7cm;
+  }
+
+
+  .imagen{
+  width: 175px;
+  height: 155px;
+  margin: 0 ; 
+  position: absolute;
+  top: 8.8cm; 
+  left: 50.5%;
+  transform: translateX(-50%);
+  }
+
+ h3 {
+  margin-top: 6cm;
+  margin-left: -25px
+
+ }
+
+ .payment--options {
+  width: calc(100% - 40px);
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  gap: 20px;
+  padding: 1px;
+  padding-right: 25px;
+  width: 350px;
+  margin-top: -2.5cm;
+  margin-left: -1cm;
+}
+
+.payment--options button {
+  height: 55px;
+  background: #f2f2f2;
+  border-radius: 11px;
+  padding: 0;
+  border: 0;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button {
+  color: rgb(56, 55, 55);
+  
+}
+
+.casa {
+margin-top: 0.35cm;
+  height: 100px;
+  width: 100px;
+margin-left: 1.15cm;
+}
+.orden {
+  display: flex;
+  justify-content: center
+}
+
+@media (max-height: 600px) {
+  .h1 {
+    margin-left: 5cm;
+  }
+}

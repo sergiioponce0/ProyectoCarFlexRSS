@@ -1,0 +1,466 @@
+.header {
+  width: 100%;
+  height: 75px;
+  font-family: var(--font-sans);
+  background: #242020;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;  }
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  float: left;
+  line-height: 75px;
+}
+body {
+  background-image: url(../fotos/fondo_definitivo.jpg);
+  background-attachment: fixed;
+}
+
+.logo h1 {
+color: #fff;
+font-weight: 400;
+font-size: 24px;
+cursor: default;
+font-family: var(--font-sans);
+}
+
+.menu {
+float: right;
+line-height: 75px;
+}
+
+.menu a {
+color: #fff;
+text-decoration: none;
+display: inline-block;
+padding: 10px 15px;
+line-height: normal;
+font-size: 14px;
+transition: all 500ms ease;
+border-bottom: 4px solid transparent;
+text-align: right;
+}
+
+.menu a:hover {
+color: #2081a7;
+border-bottom: 4px solid #2081a7;
+}
+
+.button1 {
+width: 100px;
+height: 40px;
+border: 3px solid #242020;
+border-radius: 45px;
+transition: all 0.3s;
+cursor: pointer;
+font-family: var(--font-sans);
+background: white;
+font-size: 0.7em;
+font-weight: 400;
+}
+
+.button1:hover {
+background: #242020;
+color: white;
+font-size: 0.85em;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --font-sans: "Rubik", sans-serif;
+  --font-serif: "Cardo", serif;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: -4cm;
+  font-family: Arial, sans-serif;
+  width: 100.4%; 
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  width: 97%; 
+}
+
+.footer-container div {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-social h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+  margin-bottom: 10px;
+  margin-left: 3cm;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
+  color: #2081a7;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #222;
+  font-size: 12px;
+}
+
+
+.cardsocial {
+  width: fit-content;
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  
+}
+
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 15px;
+}
+
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 15px;
+}
+
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 15px;
+  
+}
+
+.containerFour:hover {
+  background-color: #25d366;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 15px;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.empresa {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 116vh;
+  width: 100%;
+  margin-top: 3cm;
+}
+
+.card {
+  width: 23em;
+  margin-top: -14cm;
+  height: 22.5em;
+  background: #171717;
+  transition: 1s ease-in-out;
+  clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family:var(--font-sans) ;
+}
+
+
+.card span {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 1em;
+  
+}
+
+.card .info {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 0.92em;
+  margin: 1em;
+}
+
+.card .img {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.nombre{
+  margin-top: 10px;
+}
+
+.card .share {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.card a {
+  color: white;
+  transition: .4s ease-in-out;
+}
+
+.card a:hover {
+  color: red;
+}
+
+.card button {
+  padding: 0.8em 1.7em;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  transition: .4s ease-in-out;
+}
+
+.card button:hover {
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+
+.card1 {
+  width: 48em;
+  margin-top: -10cm;
+  height: 29.5em;
+  background: #242020;
+  transition: 1s ease-in-out;
+  clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family:var(--font-sans) ;
+}
+
+
+.card1 span {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 1em;
+  
+}
+
+.card1 .info {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 0.99em;
+  margin: 1em;
+}
+
+.card1 .img {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card1 .share {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.card1 a {
+  color: white;
+  transition: .4s ease-in-out;
+}
+
+.redes {
+  justify-content:center;
+  align-items: center;
+  margin-left: 6cm;
+}
+.localizacion {
+  margin-left: -2cm;
+  margin-top: -1cm;
+  padding: 25px 25px;
+  gap: 200px; 
+}
+
+.localizarnos{
+  margin-top: 0.5cm;
+}
+
+.ubi:hover {
+  background-color: #b13030;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 15px;
+}
+
+@media (max-width: 767px) {
+  .header {
+      height: 60px; /* Reducir la altura de la cabecera en dispositivos móviles */
+  }
+
+  .logo h1 {
+      font-size: 10px;
+  }
+
+  .menu {
+      float: none;
+      text-align: center;
+      line-height: normal;
+  }
+
+  .menu a {
+      font-size: 10px;
+      padding: 8px 10px;
+  }
+
+  .button1{
+    width: 70px;
+    height: 30px;
+    font-size: x-small;
+  }
+
+  .foto{
+    width: 0px;
+    height: 0px;
+  }
+
+  img {
+    width: 300px;
+    height: 100px;
+  }
+
+  .card, .card1 {
+      width: 90%; /* Las tarjetas ocupan casi todo el ancho */
+      margin: 10px auto;
+      height: auto; /* Ajuste automático del alto */
+  }
+
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-bottom {
+      font-size: 10px;
+  }
+
+  .cardsocial {
+    margin-left: -5cm;
+  }
+
+  .socialContainer {
+      width: 40px;
+      height: 40px;
+  }
+
+  .containerOne:hover, .containerTwo:hover, .containerThree:hover, .containerFour:hover {
+      transform: scale(1.3); /* Reducción de tamaño al hacer hover en móviles */
+      
+  }
+
+  .localizacion {
+      margin-left: 0;
+      margin-top: 0;
+      gap: 30px;
+  }
+
+  .ubi:hover {
+      transform: scale(1.3);
+  }
+}
